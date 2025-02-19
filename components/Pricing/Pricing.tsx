@@ -3,6 +3,9 @@ import { Switch } from "@/components/ui/switch";
 import { FaCheckCircle } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { AiFillMoon } from "react-icons/ai";
+import { MdOutlineWbSunny } from "react-icons/md";
+
 
 const Pricing = () => {
   const [isDark, setIsDark] = useState<boolean | undefined>(false);
@@ -22,24 +25,28 @@ const Pricing = () => {
         isDark ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
-      <div className="space-y-3 my-10">
-        <h1 className="text-center text-5xl font-bold">Pricing</h1>
-
+      <div className="space-y-3 my-10 flex justify-center items-center gap-10">
+        <h1 className="text-center text-5xl font-bold font-sans">Pricing      
+        </h1>
+        <div onClick={handleThemeToggle} className="cursor-pointer hover:scale-90">
+        {isDark ? <MdOutlineWbSunny size={30} className="text-white" /> : <AiFillMoon size={30} /> }
+        </div>
+       
         {/* Toggle Pricing Mode */}
        
 
         {/* Theme Toggle */}
-        <div className="flex justify-center items-center mt-4 cursor-pointer">
+        {/* <div className="flex justify-center items-center mt-4 cursor-pointer">
           <Switch checked={isDark} onCheckedChange={handleThemeToggle} />
-        </div>
+        </div> */}
       </div>
-      <div className="flex justify-center items-center gap-2 cursor-pointer m-2">
+      <div className="flex justify-center items-center gap-2 cursor-pointer m-2 font-sans">
           <span className="text-lg">Months</span>
           <Switch checked={isYearly} onCheckedChange={handlePricingToggle} />
           <span className="text-lg">Years</span>
         </div>
 
-      <div className="flex flex-wrap justify-center items-center gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-10 font-serif">
         {/* Simple Plan */}
         <div
           className={`w-96 h-[35rem] p-10 py-24 space-y-3 rounded-2xl drop-shadow-xl ${
