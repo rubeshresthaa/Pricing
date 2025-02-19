@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 const Pricing = () => {
-  const [isDark, setIsDark] = useState<Boolean | undefined>(false);
-  const [isYearly, setIsYearly] = useState<Boolean | undefined>(false);
+  const [isDark, setIsDark] = useState<boolean | undefined>(false);
+  const [isYearly, setIsYearly] = useState<boolean | undefined>(false);
 
   const handleThemeToggle = () => {
     setIsDark((prev) => !prev);
