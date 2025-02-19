@@ -82,7 +82,7 @@ const Pricing = () => {
             <span className="text-3xl">
               {isYearly ? "Rs.19200" : "Rs.2000"}
             </span>
-            {isYearly ? "year" : "month"}
+            {isYearly ? "/year" : "/month"}
           </h1>
           <h2>Ideal for individual creators.</h2>
           <p className="flex items-baseline gap-2">
