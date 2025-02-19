@@ -21,11 +21,11 @@ const Pricing = () => {
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300 ${
+      className={`min-h-screen py-10 transition-colors duration-300 ${
         isDark ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
-      <div className="space-y-3 my-10 flex justify-center items-center gap-10">
+      <div className="flex justify-center items-center gap-10">
         <h1 className="text-center text-5xl font-bold font-sans">Pricing      
         </h1>
         <div onClick={handleThemeToggle} className="cursor-pointer hover:scale-90">
