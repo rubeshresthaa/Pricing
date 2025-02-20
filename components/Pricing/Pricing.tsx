@@ -26,10 +26,10 @@ const Pricing = () => {
       }`}
     >
       <div className="flex justify-center items-center gap-6">
-        <h1 className="text-center text-5xl font-bold font-sans">Pricing      
+        <h1 className="text-center text-4xl lg:text-5xl font-bold font-sans">Pricing      
         </h1>
         <div onClick={handleThemeToggle} className="cursor-pointer hover:scale-90 mt-3">
-        {isDark ? <MdOutlineWbSunny size={35} className="text-white" /> : <AiFillMoon size={35} /> }
+        {isDark ? <MdOutlineWbSunny   className="text-white text-2xl lg:text-3xl" /> : <AiFillMoon className="text-black text-2xl lg:text-3xl" /> }
         </div>
        
         {/* Toggle Pricing Mode */}
@@ -49,7 +49,7 @@ const Pricing = () => {
       <div className="flex flex-wrap justify-center items-center gap-10 font-serif">
         {/* Simple Plan */}
         <div
-          className={`w-96 h-[35rem] p-10 py-24 space-y-3 rounded-2xl drop-shadow-xl ${
+          className={`w-96 h-[30rem] lg:h-[35rem] p-5 lg:p-10 py-12 lg:py-24 space-y-3 rounded-2xl drop-shadow-xl ${
             isDark ? "bg-gray-800" : "bg-gray-100"
           }`}
         >
@@ -80,7 +80,7 @@ const Pricing = () => {
 
         {/* Efficient Plan */}
         <div
-          className={`w-96 h-[38rem] p-10 py-24 space-y-3 rounded-2xl drop-shadow-xl ${
+          className={`w-96 h-[30rem] lg:h-[38rem] p-5 lg:p-10 py-12 lg:py-24 space-y-3 rounded-2xl drop-shadow-xl ${
             isDark ? "bg-[#F7AD3D]" : "bg-[#F7AD3D]"
           }`}
         >
@@ -114,7 +114,7 @@ const Pricing = () => {
 
         {/* Team Plan */}
         <div
-          className={`w-96 h-[35rem] p-10 py-24 space-y-3 rounded-2xl drop-shadow-xl ${
+          className={`w-96 h-[30rem] lg:h-[35rem] p-5 lg:p-10 py-10 lg:py-24 space-y-3 rounded-2xl drop-shadow-xl ${
             isDark ? "bg-gray-800" : "bg-gray-100"
           }`}
         >
